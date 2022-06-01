@@ -1,0 +1,156 @@
+/* https://bbbootstrap.com/snippets/bootstrap-5-sidebar-menu-toggle-button-34132202 */
+
+:root {
+  --header-height: 2rem;
+  --nav-width: 72px;
+  --white-color: var(--primary);
+  --z-fixed: 100;
+}
+
+body {
+  position: relative;
+  margin: 1rem;
+  transition: 0.5s;
+  padding-left: calc(1rem + var(--nav-width));
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  z-index: var(--z-fixed);
+  transition: 0.5s;
+}
+
+.header_toggle {
+  color: var(--text-light);
+  font-size: 1.5rem;
+  opacity: 1;
+  cursor: pointer;
+}
+.header_toggle:hover {
+  color: var(--primary-light);
+}
+
+.l-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: calc(100vh - 2rem);
+  width: var(--nav-width);
+  background-color: var(--text-dark);
+  transition: 0.5s;
+  z-index: var(--z-fixed);
+}
+
+.nav {
+  height: 100%;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nav_link {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  align-items: center;
+  column-gap: 1rem;
+  padding: 0.5rem 0 0.5rem 1.5rem;
+  cursor: pointer;
+}
+
+.nav_link {
+  position: relative;
+  color: var(--text-light);
+  margin-bottom: 1.3rem;
+  transition: 0.3s;
+}
+
+.nav_link:hover {
+  color: var(--white-color);
+}
+.nav_link:hover .nav_name {
+  transform: translate(5px, 0);
+  transition: all 0.3s linear;
+}
+
+.nav_icon {
+  font-size: 1.2rem;
+}
+
+.active {
+  color: var(--white-color);
+}
+
+.active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 2px;
+  height: 32px;
+  background-color: var(--white-color);
+  border-radius: 0 2px 2px 0;
+}
+
+.height-100 {
+  height: 100vh;
+}
+
+.l-navbar {
+  left: 0;
+  padding: 0 0.5rem 0 0;
+}
+
+.show-nav {
+  left: 0;
+  width: calc(var(--nav-width) + 100px);
+}
+.nav_name {
+  opacity: 0;
+}
+.show-nav .nav_name {
+  opacity: 1;
+  transition: 1s ease-in-out;
+}
+
+.body-pd {
+  padding-left: calc(var(--nav-width) + 100px + 1rem);
+}
+
+header {
+  display: none;
+}
+@media screen and (max-width: 991px) {
+  #header {
+    display: none;
+  }
+  body {
+    padding: 0;
+  }
+  .l-navbar {
+    display: none;
+  }
+  #header {
+    display: initial;
+  }
+}
+
+.socials {
+  opacity: 0.7;
+  transition: 0s;
+}
+.socials > .nav_link {
+  margin-bottom: 0rem;
+  font-size: 0.6rem;
+}
+.socials > .nav_link:hover {
+  opacity: 1;
+}
