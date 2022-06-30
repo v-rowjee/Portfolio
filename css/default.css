@@ -234,3 +234,10 @@ textarea{
 .lang img{
   height: 24px;
 }
+
+#background{
+  z-index: -1;
+}
+header{
+  z-index: 999;
+}
