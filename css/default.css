@@ -36,7 +36,7 @@ p {
 }
 
 main {
-  height: calc(100vh - 2rem);
+  /* height: calc(100vh - 2rem); */
   transition: 1s;
 }
 .card-header{
