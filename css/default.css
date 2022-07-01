@@ -235,9 +235,16 @@ textarea{
   height: 24px;
 }
 
-#background{
-  z-index: -1;
-}
 header{
   z-index: 999;
+}
+
+#background{
+  pointer-events: none;
+}
+
+@media screen and (max-width: 991px) {
+  #background{
+    z-index: -1;
+  }
 }
