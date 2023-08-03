@@ -1,442 +1,344 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="title" content="Ved Rowjee | Portfolio" />
-    <meta name="robots" content="index,follow" />
-    <title>Ved Rowjee | Portfolio</title>
 
-    <!-- jQuery -->
-    <script src="js/jquery-3.6.0.min.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="title" content="Ved Rowjee | Portfolio" />
+  <meta name="robots" content="index,follow" />
+  <title>Ved Rowjee | Portfolio</title>
 
-    <!-- Bootstrap 5.2 -->
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
-    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- jQuery -->
+  <script src="js/jquery-3.6.0.min.js"></script>
 
-    <!-- Box Icon -->
-    <link
-      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+  <!-- Bootstrap 5.2 -->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Side Nav -->
-    <link rel="stylesheet" href="css/sidenav.css" />
-    <!-- Tiny JS -->
-    <link rel="stylesheet" href="css/saxxtext.min.css" />
+  <!-- Box Icon -->
+  <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
 
-    <!-- SnackBarJS -->
-    <link rel="stylesheet" href="css/snackbar.css" />
+  <!-- Side Nav -->
+  <link rel="stylesheet" href="css/sidenav.css" />
+  <!-- Tiny JS -->
+  <link rel="stylesheet" href="css/saxxtext.min.css" />
 
-    <!-- Default -->
-    <link rel="stylesheet" href="css/default.css" />
-  </head>
-  <body id="body-pd">
-    <div
-      id="particles-js"
-      class="position-absolute top-0 bottom-0 start-0 end-0"
-    ></div>
+  <!-- SnackBarJS -->
+  <link rel="stylesheet" href="css/snackbar.css" />
 
-    <header id="header">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
-        <div class="container-fluid">
-          <a href="/" class="navbar-brand">Ved Rowjee</a>
-          <button
-            type="button"
-            class="navbar-toggler"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarCollapse"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav">
-              <a href="/" class="nav-item nav-link">Home</a>
-              <a href="about.html" class="nav-item nav-link">About</a>
-              <a href="contact.html" class="nav-item nav-link">Contact</a>
-              <a href="projects.html" class="nav-item nav-link active"
-                >Projects</a
-              >
-            </div>
-            <div class="navbar-nav flex-row">
-              <a href="tel:59749958" class="nav-item nav-link"
-                ><i class="bx bxs-phone nav_icon me-2" title="Phone"></i
-              ></a>
-              <a href="mailto:vedrowjee2001@gmail.com" class="nav-item nav-link"
-                ><i class="bx bxl-gmail nav_icon me-2" title="Gmail"></i
-              ></a>
-              <a
-                href="https://www.linkedin.com/in/ved-rowjee/"
-                target="_blank"
-                rel="noopener"
-                class="nav-item nav-link"
-                ><i class="bx bxl-linkedin nav_icon me-2" title="LinkedIn"></i
-              ></a>
-              <a
-                href="https://github.com/v-rowjee"
-                target="_blank"
-                rel="noopener"
-                class="nav-item nav-link"
-                ><i class="bx bxl-github nav_icon me-2" title="GitHub"></i
-              ></a>
-            </div>
+  <!-- Default -->
+  <link rel="stylesheet" href="css/default.css" />
+</head>
+
+<body id="body-pd">
+  <div id="particles-js" class="position-absolute top-0 bottom-0 start-0 end-0"></div>
+
+  <header id="header">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+      <div class="container-fluid">
+        <a href="/" class="navbar-brand">Ved Rowjee</a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav">
+            <a href="/" class="nav-item nav-link">Home</a>
+            <a href="about.html" class="nav-item nav-link">About</a>
+            <a href="contact.html" class="nav-item nav-link">Contact</a>
+            <a href="projects.html" class="nav-item nav-link active">Projects</a>
           </div>
-        </div>
-      </nav>
-    </header>
-
-    <div class="l-navbar m-3 bg-dark rounded shadow" id="nav-bar">
-      <nav class="nav">
-        <div class="nav_link" id="header">
-          <div class="header_toggle">
-            <i class="bx bx-menu-alt-left nav_icon pt-2" id="header-toggle"></i>
-          </div>
-        </div>
-        <div class="nav_list">
-          <a href="/" class="nav_link">
-            <i class="bx bx-home-alt-2 nav_icon" title="Home"></i>
-            <span class="nav_name">Home</span>
-          </a>
-          <a href="about.html" class="nav_link">
-            <i class="bx bx-user nav_icon" title="About"></i>
-            <span class="nav_name">About</span>
-          </a>
-          <a href="contact.html" class="nav_link">
-            <i class="bx bx-message nav_icon" title="Contact"></i>
-            <span class="nav_name">Contact</span>
-          </a>
-
-          <a href="projects.html" class="nav_link active">
-            <i class="bx bx-code-alt nav_icon" title="Projects"></i>
-            <span class="nav_name">Projects</span>
-          </a>
-        </div>
-        <div class="nav_list socials">
-          <a class="nav_link" id="phone">
-            <i class="bx bxs-phone nav_icon" title="Phone"></i>
-            <span class="nav_name">Phone</span>
-          </a>
-          <a class="nav_link" id="email">
-            <i class="bx bxl-gmail nav_icon" title="Gmail"></i>
-            <span class="nav_name">Gmail</span>
-          </a>
-          <a class="nav_link" id="linkedin">
-            <i class="bx bxl-linkedin nav_icon" title="LinkedIn"></i>
-            <span class="nav_name">LinkedIn</span>
-          </a>
-          <a class="nav_link mb-3" id="github">
-            <i class="bx bxl-github nav_icon" title="GitHub"></i>
-            <span class="nav_name">GitHub</span>
-          </a>
-        </div>
-      </nav>
-    </div>
-
-    <main class="position-absolute top-0 bottom-0" id="background">
-      <div class="row ms-5 h-100 text-center">
-        <div class="col-12 align-self-center">
-          <div class="saxx-line">
-            <h1 class="saxx-text">H</h1>
-            <h1 class="saxx-text">i</h1>
-            <h1 class="saxx-text">,</h1>
-          </div>
-          <div class="saxx-line">
-            <h1 class="saxx-text">I</h1>
-            <h1 class="saxx-text">'</h1>
-            <h1 class="saxx-text">m</h1>
-            <h1 class="saxx-text">&nbsp;</h1>
-            <h1 class="saxx-text">V</h1>
-            <h1 class="saxx-text">e</h1>
-            <h1 class="saxx-text">d</h1>
-            <h1 class="saxx-text">,</h1>
-          </div>
-          <div class="saxx-line mt-4">
-            <p class="saxx-text">S</p>
-            <p class="saxx-text">t</p>
-            <p class="saxx-text">u</p>
-            <p class="saxx-text">d</p>
-            <p class="saxx-text">e</p>
-            <p class="saxx-text">n</p>
-            <p class="saxx-text">t</p>
-            <p class="saxx-text">&nbsp;</p>
-            <p class="saxx-text">a</p>
-            <p class="saxx-text">t</p>
-            <p class="saxx-text">&nbsp;</p>
-            <p class="saxx-text">U</p>
-            <p class="saxx-text">O</p>
-            <p class="saxx-text">M</p>
+          <div class="navbar-nav flex-row">
+            <a href="tel:59749958" class="nav-item nav-link"><i class="bx bxs-phone nav_icon me-2"
+                title="Phone"></i></a>
+            <a href="mailto:vedrowjee2001@gmail.com" class="nav-item nav-link"><i class="bx bxl-gmail nav_icon me-2"
+                title="Gmail"></i></a>
+            <a href="https://www.linkedin.com/in/vedrowjee/" target="_blank" rel="noopener" class="nav-item nav-link"><i
+                class="bx bxl-linkedin nav_icon me-2" title="LinkedIn"></i></a>
+            <a href="https://github.com/v-rowjee" target="_blank" rel="noopener" class="nav-item nav-link"><i
+                class="bx bxl-github nav_icon me-2" title="GitHub"></i></a>
           </div>
         </div>
       </div>
-    </main>
+    </nav>
+  </header>
 
-    <div class="position-absolute bottom-0 end-0">
-      <p id="copyright">Copyright &#169; 2023 Ved Rowjee</p>
-    </div>
-
-    <main>
-      <div class="card bg-dark h-100 p-3">
-        <div class="card-header inline-block">
-          <div class="float-start">
-            <h1 class="typing">Projects.git</h1>
-          </div>
-          <div class="float-end me-0">
-            <a href="/" class="btn btn-primary">&times;</a>
-          </div>
+  <div class="l-navbar m-3 bg-dark rounded shadow" id="nav-bar">
+    <nav class="nav">
+      <div class="nav_link" id="header">
+        <div class="header_toggle">
+          <i class="bx bx-menu-alt-left nav_icon pt-2" id="header-toggle"></i>
         </div>
-        <div class="card-body">
-          <div class="row p-text-sm">
-            <div class="col-12 col-md-6 col-lg-4 p-5">
-              <p class="text-secondary h6">Sep - Nov 2022</p>
-              <img
-                src="images/projects/ss-carpool.png"
-                alt="carpool"
-                class="img"
-              />
-              <div class="lang">
-                <img src="images/icons/csharp.png" alt="C# Icon" />
-                <img src="images/icons/dotnet.png" alt="ASP.NET MVC Icon" />
-                <img src="images/icons/bootstrap.png" alt="Bootstrap Icon" />
-                <img src="images/icons/mysql.png" alt="MySQL Icon" />
-              </div>
-              <h5>JEDI Carpool</h5>
-              <p>An ASP.NET MVC 5 website to book or share rides.</p>
-              <a
-                href="https://github.com/v-rowjee/JEDI-Carpool"
-                target="_blank"
-                rel="noopener"
-                class="btn btn-primary"
-                >Source code</a
-              >
+      </div>
+      <div class="nav_list">
+        <a href="/" class="nav_link">
+          <i class="bx bx-home-alt-2 nav_icon" title="Home"></i>
+          <span class="nav_name">Home</span>
+        </a>
+        <a href="about.html" class="nav_link">
+          <i class="bx bx-user nav_icon" title="About"></i>
+          <span class="nav_name">About</span>
+        </a>
+        <a href="contact.html" class="nav_link">
+          <i class="bx bx-message nav_icon" title="Contact"></i>
+          <span class="nav_name">Contact</span>
+        </a>
+
+        <a href="projects.html" class="nav_link active">
+          <i class="bx bx-code-alt nav_icon" title="Projects"></i>
+          <span class="nav_name">Projects</span>
+        </a>
+      </div>
+      <div class="nav_list socials">
+        <a class="nav_link" id="phone">
+          <i class="bx bxs-phone nav_icon" title="Phone"></i>
+          <span class="nav_name">Phone</span>
+        </a>
+        <a class="nav_link" id="email">
+          <i class="bx bxl-gmail nav_icon" title="Gmail"></i>
+          <span class="nav_name">Gmail</span>
+        </a>
+        <a class="nav_link" id="linkedin">
+          <i class="bx bxl-linkedin nav_icon" title="LinkedIn"></i>
+          <span class="nav_name">LinkedIn</span>
+        </a>
+        <a class="nav_link mb-3" id="github">
+          <i class="bx bxl-github nav_icon" title="GitHub"></i>
+          <span class="nav_name">GitHub</span>
+        </a>
+      </div>
+    </nav>
+  </div>
+
+  <main class="position-absolute top-0 bottom-0" id="background">
+    <div class="row ms-5 h-100 text-center">
+      <div class="col-12 align-self-center">
+        <div class="saxx-line">
+          <h1 class="saxx-text">H</h1>
+          <h1 class="saxx-text">i</h1>
+          <h1 class="saxx-text">,</h1>
+        </div>
+        <div class="saxx-line">
+          <h1 class="saxx-text">I</h1>
+          <h1 class="saxx-text">'</h1>
+          <h1 class="saxx-text">m</h1>
+          <h1 class="saxx-text">&nbsp;</h1>
+          <h1 class="saxx-text">V</h1>
+          <h1 class="saxx-text">e</h1>
+          <h1 class="saxx-text">d</h1>
+          <h1 class="saxx-text">,</h1>
+        </div>
+        <div class="saxx-line mt-4">
+          <p class="saxx-text">S</p>
+          <p class="saxx-text">t</p>
+          <p class="saxx-text">u</p>
+          <p class="saxx-text">d</p>
+          <p class="saxx-text">e</p>
+          <p class="saxx-text">n</p>
+          <p class="saxx-text">t</p>
+          <p class="saxx-text">&nbsp;</p>
+          <p class="saxx-text">a</p>
+          <p class="saxx-text">t</p>
+          <p class="saxx-text">&nbsp;</p>
+          <p class="saxx-text">U</p>
+          <p class="saxx-text">O</p>
+          <p class="saxx-text">M</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="position-absolute bottom-0 end-0">
+    <p id="copyright">Copyright &#169; 2023 Ved Rowjee</p>
+  </div>
+
+  <main>
+    <div class="card bg-dark h-100 p-3">
+      <div class="card-header inline-block">
+        <div class="float-start">
+          <h1 class="typing">Projects.git</h1>
+        </div>
+        <div class="float-end me-0">
+          <a href="/" class="btn btn-primary">&times;</a>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="row p-text-sm">
+          <div class="col-12 col-md-6 col-lg-4 p-5">
+            <p class="text-secondary h6">Sep - Nov 2022</p>
+            <img src="images/projects/ss-carpool.png" alt="carpool" class="img" />
+            <div class="lang">
+              <img src="images/icons/csharp.png" alt="C# Icon" />
+              <img src="images/icons/dotnet.png" alt="ASP.NET MVC Icon" />
+              <img src="images/icons/bootstrap.png" alt="Bootstrap Icon" />
+              <img src="images/icons/mysql.png" alt="MySQL Icon" />
             </div>
-            <div class="col-12 col-md-6 col-lg-4 p-5">
-              <p class="text-secondary h6">Jun - Jul 2022</p>
-              <img
-                src="images/projects/ss-dinas-order.png"
-                alt="dinas-order"
-                class="img"
-              />
-              <div class="lang">
-                <img src="images/icons/laravel.png" alt="Laravel Icon" />
-                <img src="images/icons/bootstrap.png" alt="Bootstrap Icon" />
-                <img src="images/icons/mysql.png" alt="MySQL Icon" />
-              </div>
-              <h5>Dina's Order</h5>
-              <p>Laravel 8 application for ordering food at Dina's.</p>
-              <a
-                href="https://github.com/v-rowjee/DinasOrder"
-                target="_blank"
-                rel="noopener"
-                class="btn btn-primary"
-                >Source code</a
-              >
+            <h5>JEDI Carpool</h5>
+            <p>An ASP.NET MVC 5 website to book or share rides.</p>
+            <a href="https://github.com/v-rowjee/JEDI-Carpool" target="_blank" rel="noopener"
+              class="btn btn-primary">Source code</a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 p-5">
+            <p class="text-secondary h6">Jun - Jul 2022</p>
+            <img src="images/projects/ss-dinas-order.png" alt="dinas-order" class="img" />
+            <div class="lang">
+              <img src="images/icons/laravel.png" alt="Laravel Icon" />
+              <img src="images/icons/bootstrap.png" alt="Bootstrap Icon" />
+              <img src="images/icons/mysql.png" alt="MySQL Icon" />
             </div>
-            <div class="col-12 col-md-6 col-lg-4 p-5">
-              <p class="text-secondary h6">Jun - Jul 2022</p>
-              <img
-                src="images/projects/ss-attendance.png"
-                alt="attendance system"
-                class="img"
-              />
-              <div class="lang">
-                <img src="images/icons/java.png" alt="Java Icon" />
-                <img src="images/icons/mysql.png" alt="MySQL Icon" />
-              </div>
-              <h5>Automated Attendance System</h5>
-              <p>
-                Used MVC pattern to create a Java Swing GUI connected to
-                database. Project group of five students.
-              </p>
-              <a
-                href="https://github.com/v-rowjee/Remote_Automated_Attendance"
-                class="btn btn-primary"
-                >Source code</a
-              >
+            <h5>Dina's Order</h5>
+            <p>Laravel 8 application for ordering food at Dina's.</p>
+            <a href="https://github.com/v-rowjee/DinasOrder" target="_blank" rel="noopener"
+              class="btn btn-primary">Source code</a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 p-5">
+            <p class="text-secondary h6">Jun - Jul 2022</p>
+            <img src="images/projects/ss-attendance.png" alt="attendance system" class="img" />
+            <div class="lang">
+              <img src="images/icons/java.png" alt="Java Icon" />
+              <img src="images/icons/mysql.png" alt="MySQL Icon" />
             </div>
-            <div class="col-12 col-md-6 col-lg-4 p-5">
-              <p class="text-secondary h6">Jun 2022 - Present</p>
-              <img
-                src="images/projects/ss-portfolio.png"
-                alt="portfolio"
-                class="img"
-              />
-              <div class="lang">
-                <img src="images/icons/html.png" alt="HTML Icon" />
-                <img src="images/icons/css.png" alt="CSS Icon" />
-                <img src="images/icons/javascript.png" alt="JS Icon" />
-                <img src="images/icons/bootstrap.png" alt="Bootstap Icon" />
-              </div>
-              <h5>Portfolio Website</h5>
-              <p>Deployed my digit porfolio website using Netflify.</p>
-              <a href="https://github.com/v-rowjee/Portfolio" class="btn btn-primary">Source Code</a>
+            <h5>Automated Attendance System</h5>
+            <p>
+              Used MVC pattern to create a Java Swing GUI connected to
+              database. Project group of five students.
+            </p>
+            <a href="https://github.com/v-rowjee/Remote_Automated_Attendance" class="btn btn-primary">Source code</a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 p-5">
+            <p class="text-secondary h6">Jun 2022 - Present</p>
+            <img src="images/projects/ss-portfolio.png" alt="portfolio" class="img" />
+            <div class="lang">
+              <img src="images/icons/html.png" alt="HTML Icon" />
+              <img src="images/icons/css.png" alt="CSS Icon" />
+              <img src="images/icons/javascript.png" alt="JS Icon" />
+              <img src="images/icons/bootstrap.png" alt="Bootstap Icon" />
             </div>
-            <div class="col-12 col-md-6 col-lg-4 p-5">
-              <p class="text-secondary h6">May 2022</p>
-              <img
-                src="images/projects/ss-electrica.png"
-                alt="electrica"
-                class="img"
-              />
-              <div class="lang">
-                <img src="images/icons/flutter.png" alt="Flutter Icon" />
-                <img src="images/icons/dart.png" alt="Dart Icon" />
-                <img src="images/icons/firebase.png" alt="Firebase Icon" />
-              </div>
-              <h5>Electrica</h5>
-              <p>
-                Finalist of the MDash Battle by Orable Club, we built this
-                mobile application to solve problems related to Transport by
-                loaning electric cars.
-              </p>
-              <a
-                href="https://github.com/v-rowjee/Electrica"
-                target="_blank"
-                rel="noopener"
-                class="btn btn-primary"
-                >Source code</a
-              >
+            <h5>Portfolio Website</h5>
+            <p>Deployed my digit porfolio website using Netflify.</p>
+            <a href="https://github.com/v-rowjee/Portfolio" class="btn btn-primary">Source Code</a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 p-5">
+            <p class="text-secondary h6">May 2022</p>
+            <img src="images/projects/ss-electrica.png" alt="electrica" class="img" />
+            <div class="lang">
+              <img src="images/icons/flutter.png" alt="Flutter Icon" />
+              <img src="images/icons/dart.png" alt="Dart Icon" />
+              <img src="images/icons/firebase.png" alt="Firebase Icon" />
             </div>
-            <div class="col-12 col-md-6 col-lg-4 p-5">
-              <p class="text-secondary h6">May 2022</p>
-              <img
-                src="images/projects/ss-mywallet.png"
-                alt="mywallet"
-                class="img w-75"
-              />
-              <br />
-              <div class="lang">
-                <img src="images/icons/flutter.png" alt="Flutter Icon" />
-                <img src="images/icons/dart.png" alt="Dart Icon" />
-              </div>
-              <h5>MyWallet</h5>
-              <p>
-                A Flutter mobile application to manage your income and expenses.
-                The app uses SharedPreferences package to store data locally.
-              </p>
-              <a
-                href="https://github.com/v-rowjee/MyWallet"
-                target="_blank"
-                rel="noopener"
-                class="btn btn-primary"
-                >Source code</a
-              >
+            <h5>Electrica</h5>
+            <p>
+              Finalist of the MDash Battle by Orable Club, we built this
+              mobile application to solve problems related to Transport by
+              loaning electric cars.
+            </p>
+            <a href="https://github.com/v-rowjee/Electrica" target="_blank" rel="noopener"
+              class="btn btn-primary">Source code</a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 p-5">
+            <p class="text-secondary h6">May 2022</p>
+            <img src="images/projects/ss-mywallet.png" alt="mywallet" class="img w-75" />
+            <br />
+            <div class="lang">
+              <img src="images/icons/flutter.png" alt="Flutter Icon" />
+              <img src="images/icons/dart.png" alt="Dart Icon" />
             </div>
-            <div class="col-12 col-md-6 col-lg-4 p-5">
-              <p class="text-secondary h6">Apr 2022</p>
-              <img
-                src="images/projects/ss-mytodo.png"
-                alt="mytodo"
-                class="img"
-              />
-              <div class="lang">
-                <img src="images/icons/flutter.png" alt="Flutter Icon" />
-                <img src="images/icons/dart.png" alt="Dart Icon" />
-                <img src="images/icons/firebase.png" alt="Firebase Icon" />
-              </div>
-              <h5>MyToDo</h5>
-              <p>
-                A flutter To-Do List mobile application with FirebaseAuth and
-                Cloud Firestore database.
-              </p>
-              <a
-                href="https://github.com/v-rowjee/MyToDo"
-                target="_blank"
-                rel="noopener"
-                class="btn btn-primary"
-                >Source code</a
-              >
+            <h5>MyWallet</h5>
+            <p>
+              A Flutter mobile application to manage your income and expenses.
+              The app uses SharedPreferences package to store data locally.
+            </p>
+            <a href="https://github.com/v-rowjee/MyWallet" target="_blank" rel="noopener" class="btn btn-primary">Source
+              code</a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 p-5">
+            <p class="text-secondary h6">Apr 2022</p>
+            <img src="images/projects/ss-mytodo.png" alt="mytodo" class="img" />
+            <div class="lang">
+              <img src="images/icons/flutter.png" alt="Flutter Icon" />
+              <img src="images/icons/dart.png" alt="Dart Icon" />
+              <img src="images/icons/firebase.png" alt="Firebase Icon" />
             </div>
-            <div class="col-12 col-md-6 col-lg-4 p-5">
-              <p class="text-secondary h6">Jan - Jul 2022</p>
-              <img src="images/projects/ss-dinas.png" alt="dinas" class="img" />
-              <div class="lang">
-                <img src="images/icons/css.png" alt="CSS Icon" />
-                <img src="images/icons/javascript.png" alt="JS Icon" />
-                <img src="images/icons/bootstrap.png" alt="Bootstap Icon" />
-                <img src="images/icons/php.png" alt="PHP Icon" />
-                <img src="images/icons/mysql.png" alt="MySQL Icon" />
-              </div>
-              <h5>Dina's</h5>
-              <p>
-                Built a fully functional dynamic web application including admin
-                website.
-              </p>
-              <a
-                href="https://github.com/v-rowjee/Dinas"
-                target="_blank"
-                rel="noopener"
-                class="btn btn-primary"
-                >Source code</a
-              >
+            <h5>MyToDo</h5>
+            <p>
+              A flutter To-Do List mobile application with FirebaseAuth and
+              Cloud Firestore database.
+            </p>
+            <a href="https://github.com/v-rowjee/MyToDo" target="_blank" rel="noopener" class="btn btn-primary">Source
+              code</a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 p-5">
+            <p class="text-secondary h6">Jan - Jul 2022</p>
+            <img src="images/projects/ss-dinas.png" alt="dinas" class="img" />
+            <div class="lang">
+              <img src="images/icons/css.png" alt="CSS Icon" />
+              <img src="images/icons/javascript.png" alt="JS Icon" />
+              <img src="images/icons/bootstrap.png" alt="Bootstap Icon" />
+              <img src="images/icons/php.png" alt="PHP Icon" />
+              <img src="images/icons/mysql.png" alt="MySQL Icon" />
             </div>
-            <div class="col-12 col-md-6 col-lg-4 p-5">
-              <p class="text-secondary h6">Oct - Dec 2022</p>
-              <img src="images/projects/ss-gymx.png" alt="gym x" class="img" />
-              <div class="lang">
-                <img src="images/icons/html.png" alt="HTML Icon" />
-                <img src="images/icons/css.png" alt="CSS Icon" />
-                <img src="images/icons/javascript.png" alt="JS Icon" />
-                <img src="images/icons/bootstrap.png" alt="Bootstap Icon" />
-              </div>
-              <h5>Gym-X Landing Page</h5>
-              <p>
-                A responsive landing page with login and registration for a gym
-                company using Bootstrap 5.
-              </p>
-              <a
-                href="https://v-rowjee.github.io/Gym-Landing-Page/"
-                target="_blank"
-                rel="noopener"
-                class="btn btn-primary"
-                >View website</a
-              >
+            <h5>Dina's</h5>
+            <p>
+              Built a fully functional dynamic web application including admin
+              website.
+            </p>
+            <a href="https://github.com/v-rowjee/Dinas" target="_blank" rel="noopener" class="btn btn-primary">Source
+              code</a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 p-5">
+            <p class="text-secondary h6">Oct - Dec 2022</p>
+            <img src="images/projects/ss-gymx.png" alt="gym x" class="img" />
+            <div class="lang">
+              <img src="images/icons/html.png" alt="HTML Icon" />
+              <img src="images/icons/css.png" alt="CSS Icon" />
+              <img src="images/icons/javascript.png" alt="JS Icon" />
+              <img src="images/icons/bootstrap.png" alt="Bootstap Icon" />
             </div>
-            <div class="col-12 col-md-6 col-lg-4 p-5">
-              <p class="text-secondary h6">Oct - Nov 2021</p>
-              <img
-                src="images/projects/ss-library-ms.png"
-                alt="library management system"
-                class="img"
-              />
-              <div class="lang">
-                <img src="images/icons/java.png" alt="Java Icon" />
-                <img src="images/icons/mysql.png" alt="MySQL Icon" />
-              </div>
-              <h5>Library Management System</h5>
-              <p>
-                The Library Management System GUI is a JavaFx application
-                connected to a localhost MySQL database.
-              </p>
-              <a
-                href="https://github.com/v-rowjee/Library-Management-System"
-                target="_blank"
-                rel="noopener"
-                class="btn btn-primary"
-                >Source code</a
-              >
+            <h5>Gym-X Landing Page</h5>
+            <p>
+              A responsive landing page with login and registration for a gym
+              company using Bootstrap 5.
+            </p>
+            <a href="https://v-rowjee.github.io/Gym-Landing-Page/" target="_blank" rel="noopener"
+              class="btn btn-primary">View website</a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 p-5">
+            <p class="text-secondary h6">Oct - Nov 2021</p>
+            <img src="images/projects/ss-library-ms.png" alt="library management system" class="img" />
+            <div class="lang">
+              <img src="images/icons/java.png" alt="Java Icon" />
+              <img src="images/icons/mysql.png" alt="MySQL Icon" />
             </div>
+            <h5>Library Management System</h5>
+            <p>
+              The Library Management System GUI is a JavaFx application
+              connected to a localhost MySQL database.
+            </p>
+            <a href="https://github.com/v-rowjee/Library-Management-System" target="_blank" rel="noopener"
+              class="btn btn-primary">Source code</a>
           </div>
         </div>
       </div>
-    </main>
+    </div>
+  </main>
 
-    <!-- Tag Canvas -->
-    <script src="js/jquery.tagcanvas.js"></script>
+  <!-- Tag Canvas -->
+  <script src="js/jquery.tagcanvas.js"></script>
 
-    <!-- OneKo -->
-    <script src="js/oneko.js"></script>
+  <!-- OneKo -->
+  <script src="js/oneko.js"></script>
 
-    <!-- Tiny JS -->
-    <script src="js/saxxtext.js"></script>
+  <!-- Tiny JS -->
+  <script src="js/saxxtext.js"></script>
 
-    <!-- SnackBarJS -->
-    <script src="js/snackbar.js"></script>
+  <!-- SnackBarJS -->
+  <script src="js/snackbar.js"></script>
 
-    <!-- Particle.js -->
-    <script src="js/particles.min.js"></script>
+  <!-- Particle.js -->
+  <script src="js/particles.min.js"></script>
 
-    <!-- Script -->
-    <script src="js/script.js"></script>
-  </body>
+  <!-- Script -->
+  <script src="js/script.js"></script>
+</body>
+
 </html>
