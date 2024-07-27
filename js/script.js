@@ -61,8 +61,7 @@ $(document).ready(function () {
 $('#phone').click(function () {
   playSound();
   Snackbar.show({
-    // text: 'Phone: 5-974-9958',
-    text: 'My GF doesn\t approve of me sharing my number online. Please email me instead.',
+    text: 'Reach out via email: vedrowjee2001@gmail.com',
     pos: 'top-right',
     backgroundColor: 'teal',
     actionText: '<i class="bx bx-link-external"></i>',
