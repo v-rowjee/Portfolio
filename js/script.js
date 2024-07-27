@@ -33,7 +33,7 @@ $(document).ready(function () {
       wheelZoom: false,
       noSelect: true,
       textHeight: 10,
-      weight : true,
+      weight: true,
       initial: [0.1, -0.3],
     })
   ) {
@@ -50,7 +50,7 @@ $("#myCanvas").tagcanvas(
 
 setSaxxMouseEffect(".saxx-text", "saxx rubberBand", "#f5f5f5", "var(--primary)");
 
-function playSound(){
+function playSound() {
   let audio = new Audio('../audio/pop.mp3');
   audio.play();
 }
@@ -58,7 +58,7 @@ $(document).ready(function () {
   playSound();
 });
 
-$('#phone').click(function(){
+$('#phone').click(function () {
   playSound();
   Snackbar.show({
     // text: 'Phone: 5-974-9958',
@@ -67,13 +67,13 @@ $('#phone').click(function(){
     backgroundColor: 'teal',
     actionText: '<i class="bx bx-link-external"></i>',
     actionTextColor: 'white',
-    onActionClick: function(element) {
+    onActionClick: function (element) {
       $(element).css('opacity', 0);
-      window.open('tel: 59749958', '_self');
+      window.open('mailto:vedrowjee2001@gmail.com', '_self');
     }
   });
 })
-$('#email').click(function(){
+$('#email').click(function () {
   playSound();
   Snackbar.show({
     text: 'Email: vedrowjee2001@gmail.com',
@@ -81,13 +81,13 @@ $('#email').click(function(){
     backgroundColor: 'teal',
     actionText: '<i class="bx bx-link-external"></i>',
     actionTextColor: 'white',
-    onActionClick: function(element) {
+    onActionClick: function (element) {
       $(element).css('opacity', 0);
       window.open('mailto:vedrowjee2001@gmail.com', '_self');
     }
   });
 })
-$('#linkedin').click(function(){
+$('#linkedin').click(function () {
   playSound();
   Snackbar.show({
     text: 'LinkedIn: linkedin.com/in/ved-rowjee/',
@@ -95,13 +95,13 @@ $('#linkedin').click(function(){
     backgroundColor: 'teal',
     actionText: '<i class="bx bx-link-external"></i>',
     actionTextColor: 'white',
-    onActionClick: function(element) {
+    onActionClick: function (element) {
       $(element).css('opacity', 0);
       window.open('https://www.linkedin.com/in/ved-rowjee', '_blank');
     }
   });
 })
-$('#github').click(function(){
+$('#github').click(function () {
   playSound();
   Snackbar.show({
     text: 'Github: github.com/v-rowjee',
@@ -109,7 +109,7 @@ $('#github').click(function(){
     backgroundColor: 'teal',
     actionText: '<i class="bx bx-link-external"></i>',
     actionTextColor: 'white',
-    onActionClick: function(element) {
+    onActionClick: function (element) {
       $(element).css('opacity', 0);
       window.open('https://github.com/v-rowjee', '_blank');
     }
