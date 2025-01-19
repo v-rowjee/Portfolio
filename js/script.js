@@ -89,7 +89,7 @@ $('#email').click(function () {
 $('#linkedin').click(function () {
   playSound();
   Snackbar.show({
-    text: 'LinkedIn: linkedin.com/in/ved-rowjee/',
+    text: 'LinkedIn: linkedin.com/in/ved-rowjee',
     pos: 'top-right',
     backgroundColor: 'teal',
     actionText: '<i class="bx bx-link-external"></i>',
